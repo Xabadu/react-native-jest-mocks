@@ -1,0 +1,9 @@
+{
+  "name": "react-native-jest-mocks",
+  "version": "1.0.0",
+  "description": "Common Jest mocks for React Native",
+  "main": "src/mocks.js",
+  "repository": "git@github.com:Xabadu/react-native-jest-mocks.git",
+  "author": "Fernando Larrañaga <xabadu@gmail.com>",
+  "license": "MIT"
+}
