@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Common Jest mocks for React Native",
   "main": "src/mocks.js",
+  "engines": {
+    "node": ">=6.9.4"
+  },
   "repository": "git@github.com:Xabadu/react-native-jest-mocks.git",
   "author": "Fernando Larrañaga <xabadu@gmail.com>",
   "license": "MIT"
