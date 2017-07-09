@@ -8,6 +8,18 @@ module.exports = {
       getInitialURL: jest.genMockFn().mockReturnValue(Promise.resolve()),
     }));
 
+    jest.mock('NetInfo', () => {
+      return {
+        isConnected: {
+          fetch: () => {
+            return new Promise((accept, resolve) => {
+              accept(true);
+            })
+          }
+        }
+      }
+    });
+
     /* Geolocation, required by the navigation global */
     jest.mock('Geolocation', () => ({
       clearWatch: jest.fn(),
