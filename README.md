@@ -41,3 +41,6 @@ Mocks currently included:
 * Linking
 * ScrollView
 * console.error: This is currently included to avoid some warnings from react-navigation.
+
+## License
+MIT
