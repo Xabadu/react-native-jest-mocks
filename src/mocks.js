@@ -35,25 +35,6 @@ module.exports = {
 
     jest.mock('ScrollView', () => jest.genMockFromModule('ScrollView'));
 
-    /* Firebase */
-    jest.mock('firebase', () => ({
-      initializeApp: jest.fn(),
-      addEventListener: jest.fn(),
-      attachEvent: jest.fn(),
-      auth: jest.genMockFn().mockReturnValue({
-        onAuthStateChanged: jest.fn(),
-        signOut: jest.genMockFn().mockReturnValue({})
-      }),
-      database: jest.genMockFn().mockReturnValue({ 
-        ref: jest.genMockFn().mockReturnValue({ 
-          once: jest.genMockFn().mockReturnValue({}),
-          orderByKey: jest.genMockFn().mockReturnValue({
-            once: jest.genMockFn().mockReturnValue({})
-          })
-        })
-      })
-    }));
-
     console.error = jest.genMockFn();
   }
 };
