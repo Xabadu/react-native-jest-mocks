@@ -20,9 +20,10 @@ And init the mocks:
 
 `mocks.initAll();`
 
+You can also check the [Example App](https://github.com/Xabadu/react-native-jest-mocks/tree/master/Example)
+
 Mocks currently included:
 
-* Firebase
 * Geolocation
 * Linking
 * ScrollView
