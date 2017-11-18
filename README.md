@@ -6,11 +6,11 @@ Collection of Jest mocks for React Native that I use for different projects.
 
 1.- First, install the package.
 
-`yarn add react-native-jest-mocks`
+`yarn add --dev react-native-jest-mocks`
 
 or
 
-`npm install --save react-native-jest-mocks`
+`npm install --save-dev react-native-jest-mocks`
 
 2.- If you haven't already, create a `jest-setup.js` file in the root of your project.
 
