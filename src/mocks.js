@@ -34,6 +34,7 @@ module.exports = {
     }));
 
     jest.mock('ScrollView', () => jest.genMockFromModule('ScrollView'));
+    jest.mock('YellowBox', () => jest.genMockFromModule('YellowBox'));
 
     console.error = jest.genMockFn();
   }
