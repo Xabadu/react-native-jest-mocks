@@ -37,7 +37,7 @@ You can also check the [Example App](https://github.com/Xabadu/react-native-jest
 
 Mocks currently included:
 
-* Geolocation
+* navigator global
 * Linking
 * ScrollView
 * YellowBox
