@@ -3,21 +3,21 @@ module.exports = {
     jest.mock('Linking', () => ({
       addEventListener: jest.fn(),
       removeEventListener: jest.fn(),
-      openURL: jest.genMockFn().mockReturnValue(Promise.resolve()),
-      canOpenURL: jest.genMockFn().mockReturnValue(Promise.resolve()),
-      getInitialURL: jest.genMockFn().mockReturnValue(Promise.resolve()),
+      openURL: jest.fn(() => Promise.resolve()),
+      canOpenURL: jest.fn(() => Promise.resolve()),
+      getInitialURL: jest.fn(() => Promise.resolve()),
     }));
 
     jest.mock('NetInfo', () => {
       return {
         isConnected: {
           fetch: () => {
-            return new Promise((accept, resolve) => {
+            return new Promise((accept) => {
               accept(true);
-            })
+            });
           }
         }
-      }
+      };
     });
 
     global.navigator = {
@@ -32,6 +32,6 @@ module.exports = {
     jest.mock('ScrollView', () => jest.genMockFromModule('ScrollView'));
     jest.mock('YellowBox', () => jest.genMockFromModule('YellowBox'));
 
-    console.error = jest.genMockFn();
+    console.error = jest.fn();
   }
 };
