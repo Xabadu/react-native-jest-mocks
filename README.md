@@ -41,6 +41,7 @@ Mocks currently included:
 * Linking
 * ScrollView
 * YellowBox
+* `react-native-localize`
 * console.error: This is currently included to avoid some warnings from react-navigation.
 
 ## License
