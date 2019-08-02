@@ -1,6 +1,6 @@
 {
   "name": "react-native-jest-mocks",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Common Jest mocks for React Native",
   "main": "src/mocks.js",
   "engines": {
