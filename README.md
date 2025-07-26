@@ -1,5 +1,8 @@
 # React Native Jest Mocks
 
+> [!CAUTION]
+> This package is deprecated and unmaintained, built for early versions of React Native + Jest. Usage is not recommended.
+
 Collection of Jest mocks for React Native that I use for different projects.
 
 ## Usage
